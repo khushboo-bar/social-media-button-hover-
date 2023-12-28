@@ -1,0 +1,323 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: corbel;
+}
+
+.box {
+    height: 40%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 25px;
+  }
+  .button {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* padding: 10px 15px; */
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    background: linear-gradient(
+      to bottom right,
+      rgb(55, 6, 58),
+      rgb(17, 166, 172)
+    );
+    color: white;
+    font-weight: 600;
+    box-shadow: rgba(17, 12, 46, 0.219) 3px 3px 15px 5px;
+    transition: all 0.5s ease;
+    font-family: candara;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  /* facebook */
+  #fb:hover::after{
+    content: attr(data-toggle);
+    position: absolute;
+    background-color: rgb(8, 98, 246);
+    top: -45px;
+    left: -15px;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+    transform-origin: bottom;
+    animation: up 0.5s ease;
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 0px 10px 1px, rgba(0, 0, 0, 0.35) 0px 0px 10px 1px;
+  }
+
+  @keyframes up{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+
+  @keyframes up2{
+    0%{
+        transform: scale(1.5, 0);
+    }
+    100%{
+        transform: scale(1.5, 0.8);
+    }
+  }
+  #fb:hover::before{
+    content: "\25BC";
+    position: absolute;
+    top: -15px;
+    left: 12px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: rgb(8, 98, 246);
+    animation: up2 0.5s ease;
+    transform: scale(1.5, 0.8);
+    transform-origin: top;
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 0px 1px 1px);
+  }
+
+  /* instagram */
+
+  #insta:hover::after{
+    content: attr(data-toggle);
+    position: absolute;
+    background: linear-gradient(60deg,
+    rgb(254, 218, 117),
+    rgb(250, 126, 30),
+    rgb(214, 41, 118),
+    rgb(150, 47, 191),
+    rgb(79, 91, 213)
+    );
+    top: 0px;
+    left: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+    transform-origin: left;
+    animation: up 0.5s ease;
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 0px 10px 1px, rgba(0, 0, 0, 0.35) 0px 0px 10px 1px;
+  }
+
+  @keyframes up{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+
+  @keyframes up3{
+    0%{
+        transform: scale(0, 0);
+    }
+    100%{
+        transform: scale(0.8, 1.5);
+    }
+  }
+  #insta:hover::before{
+    content: "\25C0";
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #d1911b;
+    animation: up3 0.5s ease;
+    transform: scale(0.8, 1.5);
+    transform-origin: right;
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 0px 1px 1px);
+  }
+
+  /* twitter */
+
+  #tw:hover::after{
+    content: attr(data-toggle);
+    position: absolute;
+    background-color: #1c9cea;
+    top: 50px;
+    left: -8px;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+    transform-origin: top;
+    animation: up 0.5s ease;
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 0px 10px 1px, rgba(0, 0, 0, 0.35) 0px 0px 10px 1px;
+  }
+
+  @keyframes up{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+
+  @keyframes uptw{
+    0%{
+        transform: scale(1.5, 0);
+    }
+    100%{
+        transform: scale(1.5, 0.8);
+    }
+  }
+  #tw:hover::before{
+    content: "\25B2";
+    position: absolute;
+    top: 35px;
+    left: 13px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #1c9cea;
+    animation: uptw 0.5s ease;
+    transform: scale(1.5, 0.8);
+    transform-origin: bottom;
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 0px 1px 1px);
+  }
+
+
+  /* github */
+
+  #git:hover::after{
+    content: attr(data-toggle);
+    position: absolute;
+    background-color: #292929;
+    top: 3px;
+    left: -68px;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+    transform-origin: right;
+    animation: up 0.5s ease;
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 0px 10px 1px, rgba(0, 0, 0, 0.35) 0px 0px 10px 1px;
+  }
+
+  @keyframes up{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+
+  @keyframes upgit{
+    0%{
+        transform: scale(0, 0);
+    }
+    100%{
+        transform: scale(0.8, 1.5);
+    }
+  }
+  #git:hover::before{
+    content: "\25B6";
+    position: absolute;
+    top: 11px;
+    left: -15px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #292929;
+    animation: upgit 0.5s ease;
+    transform: scale(0.8, 1.5);
+    transform-origin: left;
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 0px 1px 1px);
+  }
+
+
+  #btn::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff8f;
+    height: 50px;
+    width: 20px;
+    transform: skew(-25deg) translateX(-70px);
+    transition: all 0.5s linear;
+  }
+  #btn:hover::after{
+    animation: skew 1s ease;
+  }
+
+  @keyframes skew{
+    to{
+        transform: skew(-25deg) translateX(70px);
+    }
+  }
+
+  .facebook {
+    position: absolute;
+    display: flex;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: rgb(8, 98, 246);
+    transition: all 0.5s ease;
+    transform: rotate(80deg);
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 0px 10px 0.1px, rgba(0, 0, 0, 0.35) 0px 0px 20px 2px;
+    opacity: 0;
+    cursor: pointer;
+
+  }
+  .instagram {
+    position: absolute;
+    display: flex;
+    padding: 8px;
+    border-radius: 50px;
+    background: linear-gradient(
+      60deg,
+      rgb(254, 218, 117),
+      rgb(250, 126, 30),
+      rgb(214, 41, 118),
+      rgb(150, 47, 191),
+      rgb(79, 91, 213)
+    );
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 0px 10px 0.1px, rgba(0, 0, 0, 0.35) 0px 0px 20px 2px;
+    transform: rotate(140deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+    cursor: pointer;
+    
+  }
+  .github {
+    position: absolute;
+    display: flex;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: #292929;
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 0px 10px 0.1px, rgba(0, 0, 0, 0.35) 0px 0px 20px 2px;
+    transform: rotate(140deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .twitter {
+    position: absolute;
+    display: flex;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: #1c9cea;
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 0px 10px 0.1px, rgba(0, 0, 0, 0.35) 0px 0px 20px 2px;
+    transform: rotate(140deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
